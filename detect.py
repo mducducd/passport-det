@@ -18,7 +18,7 @@ def detect(source):
     # source = '/Users/duc/Downloads/passport/yolov5/anhpassport.jpg'
 
     # Directories
-    save_dir = Path(increment_path(Path(save_dir) / name, exist_ok=True))  # increment run
+    save_dir = Path(increment_path(Path(save_dir) / name, exist_ok=False))  # increment run
     (save_dir / 'labels' if save_txt else save_dir).mkdir(parents=True, exist_ok=True)  # make dir
 
     # Initialize
